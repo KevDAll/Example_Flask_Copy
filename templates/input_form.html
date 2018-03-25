@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Stock ticker form.">
+    <meta name="author" content="@gotoariel">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>This is a stock ticker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class=page>
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <h2>Enter the information needed from the stock ticker</h2>
+	  <form id='userinfoform_lulu' method='post' action='index_lulu' > 
+          	<p>
+		Company: <input type='text' name='Ticker'>
+		</p>
+		<p>
+		Value: <select name="value" value='Open'>
+				<option value='Open'>Open</option>
+				<option value='Close'>Open</option>
+				<option value='High'>Open</option>
+				<option value='Low'>Open</option>
+				<option value='Range'>Open</option>
+			</select>
+               </p>
+               <p>
+	       Adjusted <input type="radio" name="adjusted">
+	       </p>
+               <p>
+               <input type='submit' value='Submit' />
+               </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
