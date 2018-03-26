@@ -71,7 +71,7 @@ col_dict={tuple([False,'open']):'open',tuple([False,'high']):'high',tuple([False
 
 
 
-@app.route('/info', methods=['GET','POST'])
+@app.route('/', methods=['GET','POST'])
 def input_form():
 	if request.method=='GET':
 		f=open('Get_worked.txt','w')
